@@ -9,6 +9,7 @@ import InstructorPanel from "./pages/InstructorPanel"
 import CourseEditor from "./pages/CourseEditor"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import AuthModal from "./components/AuthModal"
 
 const App = () => {
   const location = useLocation();
@@ -18,6 +19,7 @@ const App = () => {
       <Toaster position="bottom-right" />
 
       <Navbar />
+      <AuthModal />
       <main className={`flex-1 ${isPlayer ? "h-full min-h-0 overflow-hidden" : ""}`}>
         <Routes>
           <Route path="/" element={<Home />} />
