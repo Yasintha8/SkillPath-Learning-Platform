@@ -75,9 +75,9 @@ const CourseCard = ({ course, isEnrolled }: CourseCardProps) => {
                         {isFree ? <span className="text-xs font-semibold text-primary uppercase tracking-wider">Free</span> :
                             <span className="text-sm font-medium tabular-nums">${course.price}</span>}
                     </div>
-                    <button className="btn-pill-primary">
+                    <span className="btn-pill-primary">
                         {isEnrolled ? (course.progressPercentage === 100 ? "Completed" : "Continue") : "Details"}
-                    </button>
+                    </span>
                 </div>
 
             </div>
